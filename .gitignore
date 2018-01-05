@@ -1,0 +1,5 @@
+
+.metadata
+*.fdt
+.recommenders
+RemoteSystemsTempFiles/.project
