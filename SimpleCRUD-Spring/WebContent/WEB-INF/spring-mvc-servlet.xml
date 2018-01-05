@@ -17,10 +17,10 @@
 	<mvc:annotation-driven />
 	
 	<!-- Classe responsável por enviar os emails de recuperação de senha -->
-	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"></bean>
+	<!-- <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"></bean>
 	<bean id="mailSession" class="br.com.sinapsisenergia.geli.entities.EmailSession">
 		<property name="mailSender" ref="mailSender" />
-	</bean>
+	</bean> -->
 	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -43,7 +43,7 @@
 		destroy-method="close">
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
 		<property name="url"
-			value="jdbc:oracle:thin:@localhost:1521:orcl" />
+			value="jdbc:oracle:thin:@localhost:1521:xe" />
 		<property name="username" value="JavaJson" />
 		<property name="password" value="566725" />
 		<property name="maxActive" value="20" />
